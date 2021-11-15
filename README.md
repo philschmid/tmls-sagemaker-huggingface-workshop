@@ -42,7 +42,7 @@ For this workshop you’ll get access to a temporary AWS Account already pre-con
 
 ### 5. Open the Lab and select the right kernel you want to do and have fun!  
 
-Open the lab you want to do (`training/` or `inference/`) and select the pytorch kernel
+Open the Workshop Notebook
 
 ![setup5](./imgs/setup5.png)
 
