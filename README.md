@@ -9,13 +9,11 @@ The Inference Toolkit also supports "bring your own code" methods, where you can
 
 In this workshop we are going to cover: 
 
-* Deploy a trained model on Amazon SageMaker
-    * Load a pre-trained model from S3 and deploy on Amazon SageMaker endpoint for real-time inference 
-    * Deploy a pre-trained model from S3 and deploy on Amazon SageMaker endpoint for batch inference
 * Train on Amazon SageMaker
     * Prepare and upload a test dataset to S3
     * Prepare a fine-tuning script to be used with Amazon SageMaker Training jobs
     * Launch a training job and store the trained model into S3
+    * Deploy the model to Amazon SageMaker
 
 # Getting Started
 
@@ -37,7 +35,7 @@ For this workshop you’ll get access to a temporary AWS Account already pre-con
 
 * Make sure to increase the Volume Size of the Notebook if you want to work with big models and datasets
 * Add your IAM_Role with permissions to run your SageMaker Training And Inference Jobs
-* Add the Workshop Github Repository to the Notebook to preload the notebooks: `https://github.com/philschmid/prosus-sagemaker-huggingface-workshop.git`
+* Add the Workshop Github Repository to the Notebook to preload the notebooks: `https://github.com/philschmid/tmls-sagemaker-huggingface-workshop.git`
 
 ![setup4](./imgs/setup4.png)
 
@@ -51,10 +49,9 @@ Open the lab you want to do (`training/` or `inference/`) and select the pytorch
 
 #### Sources:
 
-* https://huggingface.co/docs/sagemaker/main
-* https://github.com/huggingface/notebooks/tree/master/sagemaker
-* Links to datasets – these are sampled from PolEval 2019:
-    * Train split: https://pai-marketplace21-tutorials.s3.amazonaws.com/practical-nlp/data/train.csv
-    * Test split: https://pai-marketplace21-tutorials.s3.amazonaws.com/practical-nlp/data/test.csv
-* Fine-tuned model: https://pai-marketplace21-tutorials.s3.amazonaws.com/practical-nlp/models/polish_cyberbullying_bert_base.tgz
+* [Documentation](https://huggingface.co/docs/sagemaker/main)
+* [More Notebook Samples](https://github.com/huggingface/notebooks/tree/master/sagemaker)
+* [More Notebook Samples](https://github.com/huggingface/notebooks/tree/master/sagemaker)
+* [Enterprise Scale NLP with Hugging Face & SageMaker Workshop series](https://github.com/philschmid/huggingface-sagemaker-workshop-series)
+* [Discussion Forum](https://discuss.huggingface.co/c/sagemaker/17)
 
